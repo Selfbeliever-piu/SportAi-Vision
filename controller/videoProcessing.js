@@ -159,10 +159,10 @@ exports.processVideo = catchAsync(async (req, res) => {
     const videoStream = fs.createReadStream(processedVideoPath);
     videoStream.pipe(res);
     
-    res.json({
-        success: true,
-        angles: results,
-        processedVideo: `/processed_${fileName[0]}.mp4` // Assuming it's hosted statically
-    });
+    // res.json({
+    //     success: true,
+    //     angles: results,
+    //     processedVideo: `/processed_${fileName[0]}.mp4` // Assuming it's hosted statically
+    // });
 
 });
