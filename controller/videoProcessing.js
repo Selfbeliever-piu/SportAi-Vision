@@ -164,5 +164,4 @@ exports.processVideo = catchAsync(async (req, res) => {
     //     angles: results,
     //     processedVideo: `/processed_${fileName[0]}.mp4` // Assuming it's hosted statically
     // });
-
 });
